@@ -9,3 +9,9 @@ REACT_APP_MSG_SENDER_ID="..."
 REACT_APP_APP_ID="..."
 REACT_APP_MEASUREMENT_ID="..."
 ```
+##To Run:
+commands in terminal
+```
+npm i
+npm start
+```
