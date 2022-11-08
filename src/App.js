@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Home from './pages/home';
+import Teams from './pages/teams';
+import CreateGame from './pages/CreateGame/createGame';
+import JoinGame from './pages/JoinGame/JoinGame';
 
 function App() {
+/*
+  const [user, setUser] = useState();
+
+  function Logout(){
+      setUser(null);
+    }
+    */
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/teams" element={<Teams />} />
+      <Route path="/createGame" element={<CreateGame />} />
+      <Route path="/join" element={<JoinGame />} />
+  </Routes>
   );
 }
 
