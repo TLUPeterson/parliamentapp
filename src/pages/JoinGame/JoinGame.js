@@ -15,7 +15,6 @@ function JoinGame(){
 
         <div id="blockbutton">
         <JoinGameComp />
-        <div>Below this</div>
         </div>
       </header>
     </div>

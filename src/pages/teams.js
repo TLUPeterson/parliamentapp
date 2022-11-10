@@ -2,6 +2,7 @@ import { React, useState }  from 'react';
 import { Col, Row, Statistic, Button } from 'antd';
 import 'antd/dist/antd.css';
 import './teams.css';
+import ShowPlayers from '../components/ShowPlayers/ShowPlayers';
 
 const { Countdown } = Statistic;
 
@@ -20,6 +21,8 @@ function Teams(){
   };
   const queryString = window.location.pathname;
   const gamecode=queryString.substring(7)
+
+  console.log()
   return (
     <div className="App">
       <header className="App-header">
@@ -35,7 +38,7 @@ function Teams(){
       
       <div id="Countdown">
       <Countdown title="Countdown"  value={deadlines} onFinish={onFinish} />
-
+      <ShowPlayers/>
       </div>
       </header>
     </div>
