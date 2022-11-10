@@ -4,8 +4,8 @@ import { Button } from 'antd';
 import './home.css';
 import 'antd/dist/antd.css';
 
-const toTeams = () => {
-  let path = "/teams";
+const joinGame = () => {
+  let path = "/join";
   window.location.href = path;
 }
 const CreateGame = () => {
@@ -24,7 +24,7 @@ function Home(){
           Welcome to parlamentarium app
         </p>
         <div id="blockbutton">
-        <Button type="primary" onClick={toTeams}>Teams</Button>
+        <Button type="primary" onClick={joinGame}>Join</Button>
         <Button type="primary" onClick={CreateGame}>Create</Button>
         </div>
       </header>

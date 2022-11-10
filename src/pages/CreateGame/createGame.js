@@ -5,10 +5,7 @@ import CreateGameComp from '../../components/CreateGameComp/CreateGameComp';
 
 
 const { Countdown } = Statistic;
-const toTeams = () => {
-  let path = "/teams";
-  window.location.href = path;
-}
+
 
 let instructions1 = "test2"
 let deadlineInitial = Date.now() + 1000 * 5; // 1000 = 1 second
@@ -38,7 +35,7 @@ function CreateGame(){
       <div id="Countdown">
       <Countdown title="Countdown"  value={deadlines} onFinish={onFinish} />
       <br />
-      <Button type="primary" onClick={toTeams}>Continue</Button>
+      
       </div>
       </header>
     </div>

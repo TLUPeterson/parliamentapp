@@ -1,27 +1,35 @@
 import { useState } from "react";
 import { gamesRef } from "../../utils/fbConfig";
-import { Input } from 'antd';
-//Game code so that players can access spesific game
-var randomize = require('randomatic');
-let gamecode = randomize('A0', 5)
-
+import { Input, Button } from 'antd';
 function JoinGameComp(){
-  const [game, setGame] = useState("");
 
-  const createGame = (e) => {
-    e.preventDefault();
-    const item = {
-      name: game,
-      code: gamecode,
-    }
-    gamesRef.push(item);
-    setGame("");
+//Player and gamecode state
+//if gamecode exist enter the lobby else show error that gamecode does not exist
+const [player, setPlayer] = useState("");
+const [gameCode, setGameCode] = useState("");
+
+let thecode;
+const joinGame = (e) => {
+  e.preventDefault();
+  const item = {
+    player: player
   }
+  thecode = gameCode;
+  gamesRef.child(thecode).child('players').push(item);
 
+  //window.location.href = '/teams/' + thecode;
+
+  //setPlayer("");
+  //setGameCode("");
+  //Send gamecode to next page with react component
+  
+}
   return (
-    <form onSubmit={createGame}>
-      <Input value={game} onChange={(e) => setGame(e.target.value)} placeholder="Basic Usage"/>
-      <Input />
+    <form onSubmit={joinGame}>
+      <Input value={player} onChange={(e) => setPlayer(e.target.value)} placeholder="Player name"/>
+      <Input value={gameCode} onChange={(e) => setGameCode(e.target.value)} placeholder="Game code"/>
+      <Button type="primary" form="creategame" onClick={joinGame}>Continue</Button>
+
     </form>
   )
 }

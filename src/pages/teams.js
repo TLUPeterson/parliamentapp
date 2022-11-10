@@ -18,14 +18,14 @@ function Teams(){
     const deadlinevalue = Date.now() + 1000 * 6;
     setNewDeadline(deadlinevalue)
   };
-    console.log(this.props);
-
-
+  const queryString = window.location.pathname;
+  const gamecode=queryString.substring(7)
   return (
     <div className="App">
       <header className="App-header">
       
-      
+        <div>Enter the code: </div>
+        <div name="gamecode" id="gamecode">{gamecode}</div>
         <div className="Instructions">
           {instructions}
         </div>

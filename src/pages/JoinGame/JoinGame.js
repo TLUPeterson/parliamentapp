@@ -12,14 +12,10 @@ function JoinGame(){
   return (
     <div className="Home">
       <header className="App-header">
-      
-        <div>
-          <Input />
-        </div>
 
         <div id="blockbutton">
-        <Button type="primary" onClick={toTeams}>Teams</Button>
         <JoinGameComp />
+        <div>Below this</div>
         </div>
       </header>
     </div>
