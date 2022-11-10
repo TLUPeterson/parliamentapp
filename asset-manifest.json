@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/parliamentapp/static/css/main.c76dc4a8.css",
-    "main.js": "/parliamentapp/static/js/main.f08229ab.js",
+    "main.js": "/parliamentapp/static/js/main.8780506d.js",
     "static/media/eplogo.svg": "/parliamentapp/static/media/eplogo.f50f3d9b61bfe31824fd74b7bbbcfbe0.svg",
     "index.html": "/parliamentapp/index.html",
     "main.c76dc4a8.css.map": "/parliamentapp/static/css/main.c76dc4a8.css.map",
-    "main.f08229ab.js.map": "/parliamentapp/static/js/main.f08229ab.js.map"
+    "main.8780506d.js.map": "/parliamentapp/static/js/main.8780506d.js.map"
   },
   "entrypoints": [
     "static/css/main.c76dc4a8.css",
-    "static/js/main.f08229ab.js"
+    "static/js/main.8780506d.js"
   ]
 }
