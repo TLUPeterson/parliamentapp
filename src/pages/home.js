@@ -12,6 +12,7 @@ const CreateGame = () => {
   let path = "/createGame";
   window.location.href = path;
 }
+
 function Home(){     
 
   return (

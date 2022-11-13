@@ -1,35 +1,105 @@
 import { useState } from "react";
 import { gamesRef } from "../../utils/fbConfig";
 import { Input, Button, Form } from 'antd';
+
+var randomize = require('randomatic');
+
 function JoinGameComp(){
 
 //Player and gamecode state
-//if gamecode exist enter the lobby else show error that gamecode does not exist
+
 const [player, setPlayer] = useState("");
 const [gameCode, setGameCode] = useState("");
 
 let thecode;
+//if gamecode exist enter the lobby, else it creates a new game atm
+
+
 const joinGame = (e) => {
   //e.preventDefault();
+  //Custom id for player
+  const playerid=randomize('Aa0', 10);
   const item = {
-    player: player
+    player: player,
+    playerid: playerid
   }
+  //Set player name and id to localstorage
+  localStorage.setItem('playerid', playerid);
+  localStorage.setItem('playername', player);
   thecode = gameCode;
-  gamesRef.child(thecode).child('players').push(item);
+  //Send player info to firebase db, might be unnecessary
+  //gamesRef.child(thecode).child('players').child(playerid).set(player);
 
-  window.location.href = '/teams/' + thecode;
+  let solSize;
+  let libSize;
+  let ecoSize;
+  let traSize;
+  var smallestTeam = '';
+  gamesRef.child(gameCode).child('teams').on('value', snapshot => {
+    if (snapshot.exists()) {
+        const teams = snapshot.val();
+        Object.entries(teams).forEach(entry => {
+
+          if(entry[0] === 'teamSolidarity'){
+            if(entry[1]==='null'){
+              solSize=0;
+            }else{
+              solSize = Object.keys(entry[1]).length
+            }
+          }
+          if(entry[0] === 'teamLiberty'){
+            if(entry[1]==='null'){
+              libSize=0;
+            }else{
+              libSize = Object.keys(entry[1]).length
+            }
+          }
+          if(entry[0] === 'teamEcology'){
+            if(entry[1]==='null'){
+              ecoSize=0;
+            }else{
+              ecoSize = Object.keys(entry[1]).length
+            }
+          }
+          if(entry[0] === 'teamTradition'){
+            if(entry[1]==='null'){
+              traSize=0;
+            }else{
+              traSize = Object.keys(entry[1]).length
+            }
+          }
+        })
+        var smallest = {
+          'teamSolidarity': solSize,
+          'teamLiberty': libSize,
+          'teamEcology': ecoSize,
+          'teamTradition': traSize
+        };
+        
+        for (var key in smallest){
+          if(smallestTeam  !== '' && smallest[key] < smallest[smallestTeam]){
+            smallestTeam = key;
+          }else if(smallestTeam === ''){
+            smallestTeam = key;
+          }
+        }
+  }})
+
+  //Go the game lobby
+  //window.location.href = '/teams/' + thecode;
+if(!smallestTeam){
+  console.log('not')
+}else{
+  console.log(smallestTeam);
+  gamesRef.child(gameCode).child('teams').child(smallestTeam).child(playerid).set(player);
+
+}
 
   
 }
   return (
     <div>
-    {/* <form onSubmit={joinGame}>
-      <Input value={player} onChange={(e) => setPlayer(e.target.value)} placeholder="Player name"/>
-      <Input value={gameCode} onChange={(e) => setGameCode(e.target.value)} placeholder="Game code"/>
-      <Button type="primary" form="creategame" onClick={joinGame}>Continue</Button>
 
-    </form> */}
-    
       <Form onFinish={joinGame}>
         <Form.Item  name="pname" rules={[{ required: true, message: 'Please input your name!' }]}>
           <Input placeholder="Player name" value={player} onChange={(e) => setPlayer(e.target.value)}/>
@@ -48,4 +118,4 @@ const joinGame = (e) => {
     </div>)
 }
 
-export default JoinGameComp
+export default JoinGameComp;

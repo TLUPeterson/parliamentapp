@@ -27,7 +27,7 @@ function Teams(){
     <div className="App">
       <header className="App-header">
       
-        <div>Enter the code: </div>
+        <div>Enter the code to join: </div>
         <div name="gamecode" id="gamecode">{gamecode}</div>
         <div className="Instructions">
           {instructions}
