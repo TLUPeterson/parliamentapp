@@ -31,28 +31,33 @@ function CreateGameComp(){
       teamEcology: 'null',
       teamTradition: 'null'
     }
-    //Putting player info to localstorage 
-    localStorage.setItem('playerid', playerid);
-    localStorage.setItem('playername', player);
+
     //Putting player info to firebase db, under custom room id
     //Might be useless
-    gamesRef.child(gamecode).child('players').child(playerid).set(player);
+    //gamesRef.child(gamecode).child('players').child(playerid).set(player);
     //Not this
     gamesRef.child(gamecode).child('teams').set(teams);
 
     //Get random nr between 0-3, and push player to that team
     const randteam = Math.floor(Math.random() * 4);
     console.log(randteam);
-    if(randteam===0){gamesRef.child(gamecode).child('teams').child('teamSolidarity').child(playerid).set(player);}
-    if(randteam===1){gamesRef.child(gamecode).child('teams').child('teamLiberty').child(playerid).set(player);}
-    if(randteam===2){gamesRef.child(gamecode).child('teams').child('teamEcology').child(playerid).set(player);}
-    if(randteam===3){gamesRef.child(gamecode).child('teams').child('teamTradition').child(playerid).set(player);}
+    if(randteam===0){gamesRef.child(gamecode).child('teams').child('teamSolidarity').child(playerid).set(player);
+    localStorage.setItem('team', 'teamSolidarity')}
+    if(randteam===1){gamesRef.child(gamecode).child('teams').child('teamLiberty').child(playerid).set(player);
+    localStorage.setItem('team', 'teamLiberty')}
+    if(randteam===2){gamesRef.child(gamecode).child('teams').child('teamEcology').child(playerid).set(player);
+    localStorage.setItem('team', 'teamEcology')}
+    if(randteam===3){gamesRef.child(gamecode).child('teams').child('teamTradition').child(playerid).set(player);
+    localStorage.setItem('team', 'teamTradition')}
     
+    //Putting player info to localstorage 
+    localStorage.setItem('playerid', playerid);
+    localStorage.setItem('playername', player);
+
+
     //Send gamecode to next page with  ~~react component~~ simple url methods
     //TODO:Should probably send data with react component
-    thecode = gamecode;
-    console.log(thecode)
-    window.location.href = '/teams/' + thecode;
+    window.location.href = '/teams/' + gamecode;
 
   }
 

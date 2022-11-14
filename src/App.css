@@ -1,3 +1,4 @@
+@import "~antd/dist/antd.css";
 .App {
   text-align: center;
   background-color: #282c34;
@@ -27,6 +28,16 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.App-teams {
+  background-color: #282c34;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
 
 .App-link {
   color: #61dafb;
@@ -43,4 +54,13 @@
 */
 .form{
   color: #61dafb;
+}
+
+.ant-tabs-nav-list{
+  color: white;
+}
+
+.ant-tabs-content{
+  color: white;
+  width: 50%;
 }

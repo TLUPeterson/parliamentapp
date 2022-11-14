@@ -85,17 +85,18 @@ const joinGame = (e) => {
         }
   }})
 
-  //Go the game lobby
-  //window.location.href = '/teams/' + thecode;
+  
 if(!smallestTeam){
   console.log('not')
 }else{
   console.log(smallestTeam);
+  localStorage.setItem('team', smallestTeam);
   gamesRef.child(gameCode).child('teams').child(smallestTeam).child(playerid).set(player);
-
+  //Go the game lobby
+  window.location.href = '/teams/' + thecode;
 }
-
   
+
 }
   return (
     <div>

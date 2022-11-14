@@ -19,7 +19,7 @@ function App() {
     const store = configureStore({ reducer: playerreducer })
     store.subscribe(() => console.log(store.getState()))
   return (
-
+    <>
     <Routes>
       <Route path="/" element={<Home />} />
         {/* <Route path="teams" element={<Teams />} /> */}
@@ -27,6 +27,7 @@ function App() {
         <Route path="/createGame" element={<CreateGame />} />
       <Route path="/join" element={<JoinGame /*setUser = {setUser} user={user}*//>} />
   </Routes>
+  </>
   );
 }
 

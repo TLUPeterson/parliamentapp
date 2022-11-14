@@ -3,6 +3,7 @@ import { Col, Row, Statistic, Button } from 'antd';
 import 'antd/dist/antd.css';
 import './teams.css';
 import ShowPlayers from '../components/ShowPlayers/ShowPlayers';
+import TeamBar from '../components/Header/Header';
 
 const { Countdown } = Statistic;
 
@@ -21,12 +22,12 @@ function Teams(){
   };
   const queryString = window.location.pathname;
   const gamecode=queryString.substring(7)
-
+  const team=localStorage.getItem('team');
   console.log()
   return (
-    <div className="App">
-      <header className="App-header">
-      
+    <div className="App-teams">
+      <TeamBar />
+        <div>You belong to {team}</div>
         <div>Enter the code to join: </div>
         <div name="gamecode" id="gamecode">{gamecode}</div>
         <div className="Instructions">
@@ -38,9 +39,8 @@ function Teams(){
       
       <div id="Countdown">
       <Countdown title="Countdown"  value={deadlines} onFinish={onFinish} />
-      <ShowPlayers/>
+
       </div>
-      </header>
     </div>
   );
 }   
