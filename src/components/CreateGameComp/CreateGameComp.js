@@ -53,6 +53,7 @@ function CreateGameComp(){
     //Putting player info to localstorage 
     localStorage.setItem('playerid', playerid);
     localStorage.setItem('playername', player);
+    localStorage.setItem('gamecode', gamecode);
 
 
     //Send gamecode to next page with  ~~react component~~ simple url methods

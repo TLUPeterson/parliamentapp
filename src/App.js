@@ -7,6 +7,7 @@ import JoinGame from './pages/JoinGame/JoinGame';
 import { useState } from 'react';
 import { configureStore } from '@reduxjs/toolkit';
 import playerreducer from './store/allreducers';
+import Voting from './pages/Voting/Voting';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         {/* <Route path="teams" element={<Teams />} /> */}
           <Route path="/teams/:gamecode" element={<Teams />} />
         <Route path="/createGame" element={<CreateGame />} />
+        <Route path="/voting" element={<Voting />} />
       <Route path="/join" element={<JoinGame /*setUser = {setUser} user={user}*//>} />
   </Routes>
   </>

@@ -1,0 +1,30 @@
+[data-theme='compact'] .site-navigation-steps,
+.site-navigation-steps {
+  margin-bottom: 60px;
+  box-shadow: 0px -1px 0 0 #e8e8e8 inset;
+
+}
+
+.ant-steps {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: 'tnum';
+  display: flex;
+  width: 100%;
+  font-size: 0;
+  text-align: initial;
+}
+.ant-steps-item {
+  position: relative;
+  display: inline-block;
+  flex: 1;
+  overflow: hidden;
+  vertical-align: top;
+}
+
