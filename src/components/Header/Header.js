@@ -1,10 +1,11 @@
-import { Tabs } from 'antd';
+import { Tabs, Collapse } from 'antd';
 import React from 'react';
 /*const onChange = (key) => {
   console.log(key);
 };*/
 
 const TeamBar = () => (
+  <Collapse>
   <Tabs
     defaultActiveKey="1"
     //onChange={onChange}
@@ -39,5 +40,6 @@ const TeamBar = () => (
       },
     ]}
   />
+  </Collapse>
 );
 export default TeamBar;
