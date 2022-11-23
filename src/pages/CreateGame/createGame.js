@@ -1,5 +1,5 @@
 import { React, useState }  from 'react';
-import { Col, Row, Statistic, Button } from 'antd';
+import {  Statistic } from 'antd';
 import 'antd/dist/antd.css';
 import CreateGameComp from '../../components/CreateGameComp/CreateGameComp';
 

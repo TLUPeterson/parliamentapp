@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button, Input } from 'antd';
 import 'antd/dist/antd.css';
 import JoinGameComp from "../../components/JoinGameComp/JoinGameComp";
 

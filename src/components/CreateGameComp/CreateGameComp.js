@@ -12,7 +12,6 @@ const toTeams = () => {
 function CreateGameComp(){
   //const [game, setGame] = useState("");
   const [player, setPlayer] = useState("");
-  let thecode;
 
   const createGame = (e) => {
     //Creating custom room and player ids
@@ -21,10 +20,7 @@ function CreateGameComp(){
 
     e.preventDefault();
     //player model for db
-    const playeritem = {
-      player: player,
-      playerid: playerid
-    }
+
     const teams = {
       teamSolidarity: 'null',
       teamLiberty: 'null',
@@ -39,6 +35,7 @@ function CreateGameComp(){
     gamesRef.child(gamecode).child('teams').set(teams);
 
     //Get random nr between 0-3, and push player to that team
+    /*
     const randteam = Math.floor(Math.random() * 4);
     console.log(randteam);
     if(randteam===0){gamesRef.child(gamecode).child('teams').child('teamSolidarity').child(playerid).set(player);
@@ -48,12 +45,15 @@ function CreateGameComp(){
     if(randteam===2){gamesRef.child(gamecode).child('teams').child('teamEcology').child(playerid).set(player);
     localStorage.setItem('team', 'teamEcology')}
     if(randteam===3){gamesRef.child(gamecode).child('teams').child('teamTradition').child(playerid).set(player);
-    localStorage.setItem('team', 'teamTradition')}
-    
+    localStorage.setItem('team', 'teamTradition')}*/
+
+    //Not pushing this player into any normla teams. GAME MASTER HERE
+    gamesRef.child(gamecode).child('teams').child('GAMEMASTER').child(playerid).set(player);
     //Putting player info to localstorage 
     localStorage.setItem('playerid', playerid);
     localStorage.setItem('playername', player);
     localStorage.setItem('gamecode', gamecode);
+    localStorage.setItem('gamemaster', true);
 
 
     //Send gamecode to next page with  ~~react component~~ simple url methods

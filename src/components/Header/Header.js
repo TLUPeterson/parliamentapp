@@ -5,7 +5,6 @@ import React from 'react';
 };*/
 
 const TeamBar = () => (
-  <Collapse>
   <Tabs
     defaultActiveKey="1"
     //onChange={onChange}
@@ -40,6 +39,5 @@ const TeamBar = () => (
       },
     ]}
   />
-  </Collapse>
 );
 export default TeamBar;
