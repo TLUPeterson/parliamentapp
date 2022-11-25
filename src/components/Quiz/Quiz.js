@@ -7,7 +7,7 @@ import questionsEco from './questionEco';
 var questions;
 var currentTeam = localStorage.getItem('team');
 if(currentTeam==='teamSolidarity'){questions=questionsSol};
-if(currentTeam==='teamTraditional'){questions=questionsTrad};
+if(currentTeam==='teamTradition'){questions=questionsTrad};
 if(currentTeam==='teamEcology'){questions=questionsEco};
 if(currentTeam==='teamLiberty'){questions=questionsLib};
 

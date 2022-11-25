@@ -49,6 +49,8 @@ function CreateGameComp(){
 
     //Not pushing this player into any normla teams. GAME MASTER HERE
     gamesRef.child(gamecode).child('teams').child('GAMEMASTER').child(playerid).set(player);
+    //Game flags to continou the game for all players here
+    gamesRef.child(gamecode).child('flags').child('flag1').set(false);
     //Putting player info to localstorage 
     localStorage.setItem('playerid', playerid);
     localStorage.setItem('playername', player);

@@ -27,6 +27,7 @@ const joinGame = (e) => {
   localStorage.setItem('playerid', playerid);
   localStorage.setItem('playername', player);
   localStorage.setItem('gamecode', gameCode);
+  localStorage.setItem('gamemaster', false);
   thecode = gameCode;
   //Send player info to firebase db, might be unnecessary
   //gamesRef.child(thecode).child('players').child(playerid).set(player);
