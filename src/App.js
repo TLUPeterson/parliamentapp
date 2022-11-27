@@ -8,6 +8,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import playerreducer from './store/allreducers';
 import Voting from './pages/Voting/Voting';
 import Quiz from './pages/Quiz/Quiz';
+import ImagesPage from './pages/ImagesPage/ImagesPage';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/voting" element={<Voting />} />
         <Route path="/quiz" element={<Quiz />} />
       <Route path="/join" element={<JoinGame /*setUser = {setUser} user={user}*//>} />
+      <Route path="/images" element={<ImagesPage />} />
   </Routes>
   </>
   );
