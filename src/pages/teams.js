@@ -19,6 +19,11 @@ const TempVotingPath = () => {
   window.location.href = path;
 }
 
+const Images = () => {
+  let path = "/images";
+  window.location.href = path;
+}
+
 function Teams(){     
   const [instructions, setNewInstruction] = useState(instructions1);
   const [deadlines, setNewDeadline] = useState(deadlineInitial);
@@ -89,6 +94,7 @@ function Teams(){
 
 
       </div>
+      <Button type="primary" onClick={Images}>Introduction from Parliament members</Button>
       <Button type="primary" onClick={TempVotingPath}>Temp voting path</Button>
     </div>
     </>
