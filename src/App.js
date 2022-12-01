@@ -9,6 +9,7 @@ import playerreducer from './store/allreducers';
 import Voting from './pages/Voting/Voting';
 import Quiz from './pages/Quiz/Quiz';
 import ImagesPage from './pages/ImagesPage/ImagesPage';
+import StageIntroduction from './pages/Stage_Introduction/Stage_Introduction';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/quiz" element={<Quiz />} />
       <Route path="/join" element={<JoinGame /*setUser = {setUser} user={user}*//>} />
       <Route path="/images" element={<ImagesPage />} />
+      <Route path="/introduction" element={<StageIntroduction />} />
   </Routes>
   </>
   );

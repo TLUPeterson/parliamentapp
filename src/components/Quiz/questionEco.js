@@ -2,37 +2,37 @@ const questionsEco = [
   {
     questionText: 'Team Ecology question 1',
     answerOptions: [
-      { answerText: '1tst1', isCorrect: false },
-      { answerText: '1tst2', isCorrect: false },
-      { answerText: '1tst3', isCorrect: true },
-      { answerText: '1tst4', isCorrect: false },
+      { answerText: '1eco1', isCorrect: false },
+      { answerText: '1eco2', isCorrect: false },
+      { answerText: '1eco3', isCorrect: true },
+      { answerText: '1eco4', isCorrect: false },
     ],
   },
   {
     questionText: 'Team Ecology question 2',
     answerOptions: [
-      { answerText: '2tst1', isCorrect: false },
-      { answerText: '2tst2', isCorrect: true },
-      { answerText: '2tst3', isCorrect: false },
-      { answerText: '2tst4', isCorrect: false },
+      { answerText: '2eco1', isCorrect: false },
+      { answerText: '2eco2', isCorrect: true },
+      { answerText: '2eco3', isCorrect: false },
+      { answerText: '2eco4', isCorrect: false },
     ],
   },
   {
     questionText: 'Team Ecology question 3',
     answerOptions: [
-      { answerText: '3tst1', isCorrect: false },
-      { answerText: '3tst2', isCorrect: true },
-      { answerText: '3tst3', isCorrect: false },
-      { answerText: '3tst4', isCorrect: false },
+      { answerText: '3eco1', isCorrect: false },
+      { answerText: '3eco2', isCorrect: true },
+      { answerText: '3eco3', isCorrect: false },
+      { answerText: '3eco4', isCorrect: false },
     ],
   },
   {
     questionText: 'Team Ecology question 4',
     answerOptions: [
-      { answerText: '4tst1', isCorrect: false },
-      { answerText: '4tst2', isCorrect: false },
-      { answerText: '4tst3', isCorrect: false },
-      { answerText: '4tst4', isCorrect: true },
+      { answerText: '4eco1', isCorrect: false },
+      { answerText: '4eco2', isCorrect: false },
+      { answerText: '4eco3', isCorrect: false },
+      { answerText: '4eco4', isCorrect: true },
     ],
   },
 ]

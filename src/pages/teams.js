@@ -29,7 +29,7 @@ function Teams(){
     let flag1 = snapshot.val()
     console.log(flag1)
     if(gm==='false'){
-      window.location.href = '/quiz';
+      window.location.href = '/introduction';
     }else{
       console.log('I am the gm')
     }

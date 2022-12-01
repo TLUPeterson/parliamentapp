@@ -8,11 +8,12 @@ function Teams(){
   console.log()
   return (
 <>
-    <div className="Home">
-      <Header />
+    <Header />
+    <div className="App-teams">
+      <Quizcomponent />
 
     </div>
-      <Quizcomponent />
+      
 </>
   );
 }   
