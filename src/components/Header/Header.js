@@ -6,7 +6,7 @@ import React from 'react';
 
 const TeamBar = () => (
   <Tabs
-    defaultActiveKey="1"
+    defaultActiveKey="5"
     //onChange={onChange}
     centered={true}
     size="large"

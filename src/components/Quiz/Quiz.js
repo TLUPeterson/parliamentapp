@@ -40,7 +40,7 @@ function Quizcomponent(){
         <Alert message="Try again" type="error" closable afterClose={handleClose} style={{width: '50vh'}}/>
       )}
       <div className='question-count'>
-        <span>Question {currentQuestion + 1}</span>{questions.length}
+        <span>Question {currentQuestion + 1}</span>
       </div>
       <div className='question-text'>
         {questions[currentQuestion].questionText}

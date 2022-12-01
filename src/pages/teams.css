@@ -12,6 +12,11 @@
   font-size: calc(20px + 2vmin);
   border-top: 1px solid
 }
+#gamecodeactual{
+  font-size: calc(20px + 2vmin);
+  border-top: 1px solid;
+  color: #fadb14;
+}
 
 #root{
   background-color: #282c34;

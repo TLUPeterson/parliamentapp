@@ -11,7 +11,7 @@ function JoinGame(){
   return (
     <div className="Home">
       <header className="App-header">
-        <>Game code is created at '/createGame' by the gm</>
+        <>Enter your name and the gamecode</>
         <div id="blockbutton">
         <JoinGameComp />
         </div>
