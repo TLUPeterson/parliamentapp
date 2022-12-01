@@ -56,10 +56,10 @@ function Teams(){
     <TeamBar />
     <div className="App-teams">
       
-        <div>You belong to </div><div style={{color: "#fa541c"}}>{team}</div><br/><br/>
+        <div>You belong to </div><div style={{color: "#fa541c", fontWeight: "bold", fontSize: "xxx-large"}}>{team}.</div><br/><br/>
 
         <div className="Instructions">
-          Wait for the game the gamemaster to start the game
+          Wait for the Gamemaster to start the game!
         </div>
         <div id="blockbutton">
         {/* <Button type="primary" onclick={toTeams}>Continue</Button> */}

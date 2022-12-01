@@ -1,0 +1,32 @@
+p {
+    color: white;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/*.ant-collapse {
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    color: #282C34;
+}*/
+
+.ant-collapse {
+    background-color: #282C34;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    text-decoration: white;
+}
+
+.ant-collapse .ant-panel {
+    background-color: #282C34;
+    text-decoration: white;
+}
+
+.ant-collapse .ant-collapse-item .ant-collapse-header {
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    border: none;
+}
