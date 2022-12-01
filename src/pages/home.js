@@ -22,11 +22,12 @@ function Home(){
 
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Welcome to parlamentarium app
+          Welcome to the Parlamentarium App!
         </p>
         <div id="blockbutton">
-        <Button type="primary" onClick={joinGame}>Join</Button>
-        <Button type="primary" onClick={CreateGame}>Create</Button>
+        <Button type="primary" onClick={joinGame}>Join Existing Game</Button>
+        <br />
+        <Button type="primary" onClick={CreateGame}>Create New Game</Button>
         </div>
       </header>
     </div>
