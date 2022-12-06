@@ -71,7 +71,7 @@ function CreateGameComp(){
 
     </Space>
       <div>{posVote}</div>
-      
+
       <Progress
       type="circle"
       percent={percent}

@@ -30,3 +30,33 @@ p {
     font-size: medium;
     border: none;
 }
+
+.header {
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #282C34;
+    padding: 10px;
+
+}
+
+.ant-btn{
+  color: red!;
+  max-width: 100%;
+  /* Choose a responsive size for the button */
+  margin-right: 5px;
+
+  
+}
+@media (max-width: 600px) {
+    .header {
+    flex-direction: column;
+    }
+    .ant-btn{
+      max-width: 30%;
+      /* Choose a responsive size for the button */
+      width: 25%;
+    }
+}
