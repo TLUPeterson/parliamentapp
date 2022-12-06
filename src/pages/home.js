@@ -19,10 +19,9 @@ function Home(){
     <div className="Home">
       <header className="App-header">
       
-
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Welcome to the Parlamentarium App!
+        Welcome to the Parlamentarium App!
         </p>
         <div id="blockbutton">
         <Button type="primary" onClick={joinGame}>Join Existing Game</Button>

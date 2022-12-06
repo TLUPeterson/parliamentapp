@@ -1,5 +1,5 @@
-import { Checkbox, InputNumber, Space } from 'antd';
-import React, { useState } from 'react';
+import { Checkbox, InputNumber, Space, Progress } from 'antd';
+import React, { useEffect, useState } from 'react';
 import './Voting.css'
 import { gamesRef } from "../../utils/fbConfig";
 
@@ -13,10 +13,21 @@ const onChange = (value) => {
 
 
 function CreateGameComp(){
+  const [percent, setPercent] = useState(0);
   const [vote, setVote] = useState('');
   const [avg, setAvg] = useState('');
   var posVote=0;
   var avgVote;
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPercent((percent) => (percent + 1) % 100);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+
+
   const onChange = (e) => {
     let value=e.target.checked
     
@@ -45,22 +56,29 @@ function CreateGameComp(){
   var test = Math.round(voteavg / vote.length);
 
   return (
-    <div>
-    <Checkbox onChange={onChange}>Checkbox</Checkbox>
-    <Checkbox onChange={onChange}>Checkbox</Checkbox>
-    <Checkbox onChange={onChange}>Checkbox</Checkbox>
-    <Space>
-    <InputNumber
-      defaultValue={1000}
-      formatter={(value) => `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
-      parser={(value) => value.replace(/\$\s?|(,*)/g, '')}
-      onChange={nr1onChange}
-    />
-    <div>Avg budget is: {test}</div>
+  <div>
+      <Checkbox onChange={onChange}>Checkbox</Checkbox>
+      <Checkbox onChange={onChange}>Checkbox</Checkbox>
+      <Checkbox onChange={onChange}>Checkbox</Checkbox>
+      <Space>
+      <InputNumber
+        defaultValue={1000}
+        formatter={(value) => `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+        parser={(value) => value.replace(/\$\s?|(,*)/g, '')}
+        onChange={nr1onChange}
+      />
+      <div>Avg budget is: {test}</div>
 
-  </Space>
-    <div>{posVote}</div>
-    </div>
+    </Space>
+      <div>{posVote}</div>
+      
+      <Progress
+      type="circle"
+      percent={percent}
+      format={() => `${percent}%`}
+    />
+  </div>
+    
   )
 }
 

@@ -1,20 +1,20 @@
 const questionsLib = [
   {
-    questionText: 'Team Liberty question 1',
+    questionText: 'What is the most important item in it?',
     answerOptions: [
-      { answerText: '1tst1', isCorrect: false },
-      { answerText: '1tst2', isCorrect: false },
-      { answerText: '1tst3', isCorrect: true },
-      { answerText: '1tst4', isCorrect: false },
+      { answerText: 'keeping social and economic stability', isCorrect: false },
+      { answerText: 'protecting health and the environment', isCorrect: false },
+      { answerText: 'guaranteeing social welfare and justice', isCorrect: true },
+      { answerText: 'increasing individual and business freedom', isCorrect: false },
     ],
   },
   {
-    questionText: 'Team Liberty question 2',
+    questionText: 'The Liberty group fights for a society and economy based on freedom',
     answerOptions: [
-      { answerText: '2tst1', isCorrect: false },
-      { answerText: '2tst2', isCorrect: true },
-      { answerText: '2tst3', isCorrect: false },
-      { answerText: '2tst4', isCorrect: false },
+      { answerText: 'Individuals and businesses should be free to compete and innovate. These are the basic conditions for economic growth in Europe.', isCorrect: false },
+      { answerText: 'We fight for the rights of taxpayers and businesses. Public spending and taxes should remain as low as possible.', isCorrect: true },
+      { answerText: 'Nobody has the right to threaten personal freedom.', isCorrect: false },
+      //{ answerText: '2tst4', isCorrect: false },
     ],
   },
   {

@@ -1,20 +1,20 @@
 const questionsEco = [
   {
-    questionText: 'Team Ecology question 1',
+    questionText: 'What is the most important idea in our party manifesto?',
     answerOptions: [
-      { answerText: '1eco1', isCorrect: false },
-      { answerText: '1eco2', isCorrect: false },
-      { answerText: '1eco3', isCorrect: true },
-      { answerText: '1eco4', isCorrect: false },
+      { answerText: 'keeping social and economic stability', isCorrect: false },
+      { answerText: 'protecting health and the environment', isCorrect: false },
+      { answerText: 'guaranteeing social welfare and justice', isCorrect: true },
+      { answerText: 'increasing individual and business freedom', isCorrect: false },
     ],
   },
   {
     questionText: 'Team Ecology question 2',
     answerOptions: [
-      { answerText: '2eco1', isCorrect: false },
-      { answerText: '2eco2', isCorrect: true },
-      { answerText: '2eco3', isCorrect: false },
-      { answerText: '2eco4', isCorrect: false },
+      { answerText: 'The Ecology group fights to protect the environment and people’s health. A clean and safe environment is a fundamental human right.', isCorrect: false },
+      { answerText: 'We support scientific research for the environment. This is the only sustainable way to save the planet.', isCorrect: true },
+      { answerText: 'There should be no budget limits when protecting the environment.', isCorrect: false },
+      { answerText: ' Society must reduce consumption.', isCorrect: false },
     ],
   },
   {

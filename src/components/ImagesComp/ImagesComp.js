@@ -19,6 +19,10 @@ function ImagesComp(){
         let path = "/teams/" + gamecode;
         window.location.href = path;
     }
+    const Voting = () => {
+        let path = "/voting/";
+        window.location.href = path;
+    }
 
     let imageElement = images[index];
     return (
@@ -42,6 +46,7 @@ function ImagesComp(){
         </p>
         
         <Button type="primary" onClick={Teams}>Back to Teams view</Button>
+        <Button type="primary" onClick={Voting}>To Voting</Button>
     </div>
     )
 }
