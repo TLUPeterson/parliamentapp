@@ -1,0 +1,65 @@
+.ant-btn-primary {
+    display: inline-flex;
+    vertical-align: middle;
+    margin-top: 30px;
+    height: 40px;
+    background-color: #282C34;
+    border-color: white;
+    font-size: medium;
+    border: 2px solid #000000;
+    padding-bottom: 15px;
+}
+
+.ant-btn-primary:disabled {
+    display: inline-flex;
+    vertical-align: middle;
+    margin-top: 30px;
+    height: 40px;
+    background-color: #282C34;
+    border-color: white;
+    font-size: medium;
+    border: 2px solid #000000;
+    padding-bottom: 15px;
+}
+
+.ant-btn-primary:hover {
+    background-color: #14161a;
+    border: 2px solid #000000;
+    transition-duration: 0.5s;
+}
+
+.ant-btn-primary:after {
+    background-color: #14161a;
+    border: 2px solid #000000;
+}
+
+.ant-btn-primary:active {
+    background-color: #14161a;
+    border: 2px solid #000000;
+}
+
+.ant-btn-primary:focus {
+    background-color: #14161a;
+    border: 2px solid #000000;
+}
+
+.ant-btn-primary:disabled:hover {
+    background-color: #282C34;
+    border: 2px solid #000000;
+}
+
+.buttonsClass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imageArea, #nameArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#textArea {
+    width: 90vw;
+}

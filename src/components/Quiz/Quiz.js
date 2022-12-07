@@ -4,6 +4,8 @@ import questionsSol from './questionsSol';
 import questionsTrad from './questionsTrad';
 import questionsLib from './questionsLib';
 import questionsEco from './questionEco';
+import "./Quiz.css";
+
 var questions;
 var currentTeam = localStorage.getItem('team');
 if(currentTeam==='teamSolidarity'){questions=questionsSol};
@@ -52,10 +54,12 @@ function Quizcomponent(){
     <div id="App-teams">
     <div className='question-section' style={{color: 'white'}}>
     {visible && (
-        <Alert message="Try again" type="error" closable afterClose={handleClose} style={{width: '50vh'}}/>
+        <div id='alertDiv'>
+          <Alert message="Try again!" type="error" closable afterClose={handleClose} style={{width: '50vh'}}/>
+        </div>
       )}
       <div className='question-count' style={{textAlign: 'center'}}>
-        <span>Question {currentQuestion + 1}</span>
+        <span>QUESTION {currentQuestion + 1}</span>
       </div>
       <div className='question-text' style={{textAlign: 'center'}}>
         {questions[currentQuestion].questionText}
@@ -65,7 +69,7 @@ function Quizcomponent(){
     <div className='answer-section' style={{alignItems: 'center'}}>
       {
         questions[currentQuestion].answerOptions.map((answerOptions) => (
-          <Button onClick={() => handleAnswerButtonClick(answerOptions.isCorrect)}>{answerOptions.answerText}</Button>
+          <Button type='primary' onClick={() => handleAnswerButtonClick(answerOptions.isCorrect)}>{answerOptions.answerText}</Button>
         ))
       }
     </div>
