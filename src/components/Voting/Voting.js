@@ -56,10 +56,11 @@ function CreateGameComp(){
   var test = Math.round(voteavg / vote.length);
 
   return (
-  <div>
-      <Checkbox onChange={onChange}>Checkbox</Checkbox>
-      <Checkbox onChange={onChange}>Checkbox</Checkbox>
-      <Checkbox onChange={onChange}>Checkbox</Checkbox>
+  <div id='votingDiv'>
+      <div id='checkboxArea'>
+      <Checkbox onChange={onChange} style={{color: "white"}}>Checkbox</Checkbox>
+      <Checkbox onChange={onChange} style={{color: "white"}}>Checkbox</Checkbox>
+      <Checkbox onChange={onChange} style={{color: "white"}}>Checkbox</Checkbox>
       <Space>
       <InputNumber
         defaultValue={1000}
@@ -68,15 +69,17 @@ function CreateGameComp(){
         onChange={nr1onChange}
       />
       <div>Avg budget is: {test}</div>
-
     </Space>
-      <div>{posVote}</div>
+    <div>{posVote}</div>
+    </div>
 
-      <Progress
+    <div id='progressArea'>
+    <Progress
       type="circle"
       percent={percent}
       format={() => `${percent}%`}
     />
+    </div>
   </div>
     
   )
