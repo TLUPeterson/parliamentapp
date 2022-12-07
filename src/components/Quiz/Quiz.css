@@ -1,8 +1,12 @@
 .ant-alert{
-  width: 50%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .ant-alert-error{
-  width: 50%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .question-section{
   width: 50%;

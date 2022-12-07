@@ -35,19 +35,21 @@ function Teams(){
     }
 
   });
-//////////////////////////
+////////////////////////// #282C34
   const team=localStorage.getItem('team');
   console.log()
   console.log(typeof gm);
   if (gm==='true'){
     return (
-      <div style={{color: 'white', alignItems: 'center', justifyContent: 'center'}}>
-        <div >
-          <Button onClick={startGame} type="primary" size="large" style={{alignItems: 'center', justifyContent: 'center', margin: 'auto'}}>Start game</Button>
-        </div >
-        <div className="gamecode" id="gamecode">Enter the code to join:  </div>
-        <p id="gamecodeactual" name="gamecode">{gamecode}</p>
-        
+      <div id='teamsDiv'>
+        <div id='textAreaDiv'>
+          <h2>Gamemaster View</h2>
+          <div id='gameBtn'>
+            <Button onClick={startGame} type="primary" size="large">Start game</Button>
+          </div>
+          <div className="gamecode" id="gamecode">Enter the code to join:  </div>
+          <p id="gamecodeactual" name="gamecode">{gamecode}</p>
+        </div>
       </div>
     );
   }else{

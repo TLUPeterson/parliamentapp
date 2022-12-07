@@ -10,14 +10,55 @@
 }
 #gamecode{
   font-size: calc(20px + 2vmin);
-  border-top: 1px solid
+  border-top: 1px solid;
+  color: #fadb14;
+  font-weight: bold;
 }
+
 #gamecodeactual{
   font-size: calc(20px + 2vmin);
   border-top: 1px solid;
   color: #fadb14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #root{
   background-color: #282c34;
+}
+
+body{
+  background-color: #282C34!important ;
+}
+
+#teamsDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#teamsHeader {
+  font-weight: bold;
+  color: white;
+}
+
+h2 {
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+#textAreaDiv {
+  color: white;
+}
+
+#gameBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
 }

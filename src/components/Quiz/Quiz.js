@@ -53,7 +53,9 @@ function Quizcomponent(){
     <div id="App-teams">
     <div className='question-section'>
     {visible && (
-        <Alert message="Try again" type="error" closable afterClose={handleClose} style={{width: '50vh'}}/>
+        <div id='alertDiv'>
+          <Alert message="Try again!" type="error" closable afterClose={handleClose} style={{width: '50vh'}}/>
+        </div>
       )}
       <div className='question-count' >
         <span>Question {currentQuestion + 1}</span>
@@ -66,7 +68,7 @@ function Quizcomponent(){
     <div className='answer-section'>
       {
         questions[currentQuestion].answerOptions.map((answerOptions) => (
-          <Button onClick={() => handleAnswerButtonClick(answerOptions.isCorrect)}>{answerOptions.answerText}</Button>
+          <Button type='primary' onClick={() => handleAnswerButtonClick(answerOptions.isCorrect)}>{answerOptions.answerText}</Button>
         ))
       }
     </div>

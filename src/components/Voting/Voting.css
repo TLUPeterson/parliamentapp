@@ -1,0 +1,21 @@
+#votingDiv {
+    background-color: #282C34;
+}
+
+#checkboxArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#progressArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.ant-progress-text {
+    color: white !important;
+}
