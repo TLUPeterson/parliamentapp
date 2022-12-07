@@ -16,9 +16,11 @@
   list-style: none;
   font-feature-settings: 'tnum';
   display: flex;
-  width: 100%;
   font-size: 0;
   text-align: initial;
+  align-items: center;
+  justify-content: center;
+  background-color: #282C34;
 }
 .ant-steps-item {
   position: relative;

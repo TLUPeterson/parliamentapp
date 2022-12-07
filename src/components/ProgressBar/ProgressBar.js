@@ -1,5 +1,6 @@
 import { Statistic, Steps } from 'antd';
 import React from 'react';
+import "./ProgressBar.css";
 
 const description = 'This is a description.';
 const { Countdown } = Statistic;
@@ -17,13 +18,12 @@ const App = () => (
         'description': 'Read the manifestos of the teams',
       },
       {
-        title: 'In Progress',
-        description,
-        subTitle: 'Left 00:00:08',
+        title: 'Voting (In Progress)',
+        description: 'Make best possible votes for your Party',
       },
       {
-        title: 'Waiting',
-        description,
+        title: 'Go to reading session',
+        description: 'Hear from President of European Parliament',
       },
     ]}
   />

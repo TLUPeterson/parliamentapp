@@ -57,6 +57,7 @@ function CreateGameComp(){
 
   return (
   <div id='votingDiv'>
+      <h2>Voting</h2>
       <div id='checkboxArea'>
       <Checkbox onChange={onChange} style={{color: "white"}}>Checkbox</Checkbox>
       <Checkbox onChange={onChange} style={{color: "white"}}>Checkbox</Checkbox>
