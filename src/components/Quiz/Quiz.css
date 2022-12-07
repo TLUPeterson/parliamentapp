@@ -7,3 +7,6 @@
 .question-section{
   width: 50%;
 }
+.answer-section{
+  flex-direction: column;
+}
