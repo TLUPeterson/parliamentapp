@@ -6,7 +6,7 @@ function Stage_End(){
     return (
     <div className="App-header">
         <p>End of the game</p>
-        <p>The average vote came to: {avgvote}</p>
+        <p>The average budget came to: {avgvote}</p>
         <p>Members are indifferent to the creation of an agency</p>
     </div>
     )
