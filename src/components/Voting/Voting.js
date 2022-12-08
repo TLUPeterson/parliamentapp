@@ -3,6 +3,10 @@ import React, { useEffect, useState } from 'react';
 import './Voting.css'
 import { gamesRef } from "../../utils/fbConfig";
 
+const End = () => {
+  let path = "/end";
+  window.location.href = path;
+}
 
 const gamecode = localStorage.getItem('gamecode');
 const playerid = localStorage.getItem('playerid');
@@ -83,7 +87,7 @@ function CreateGameComp(){
       <br/>
     <InputNumber
         defaultValue={1000}
-        formatter={(value) => `€ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+        formatter={(value) => `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
         parser={(value) => value.replace(/\$\s?|(,*)/g, '')}
         onChange={nr1onChange}
       />
@@ -98,7 +102,9 @@ function CreateGameComp(){
       format={() => `${percent}%`}
     />
     </div>
+    <Button type="primary" onClick={End}>To End Screen</Button>
   </div>
+  
     
   )
 }
