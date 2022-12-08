@@ -2,7 +2,6 @@ import React from 'react';
 import logo from '../eplogo.svg';
 import { Button } from 'antd';
 import './home.css';
-import 'antd/dist/antd.css';
 
 const joinGame = () => {
   let path = "/join";
@@ -24,9 +23,9 @@ function Home(){
         Welcome to the Parlamentarium App!
         </p>
         <div id="blockbutton">
-        <Button type="primary" onClick={joinGame}>Join Existing Game</Button>
+        <Button type="primary" className="homeButton" onClick={joinGame}>Join Existing Game</Button>
         <br />
-        <Button type="primary" onClick={CreateGame}>Create New Game</Button>
+        <Button type="primary" className="homeButton" onClick={CreateGame}>Create New Game</Button>
         </div>
       </header>
     </div>

@@ -1,17 +1,19 @@
 import { React, useState }  from 'react';
-import 'antd/dist/antd.css';
 import CreateGameComp from '../../components/CreateGameComp/CreateGameComp';
 import './createGame.css';
+import logo from '../..//eplogo.svg';
 
 function CreateGame(){     
 
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Create New Game</h2>
+      <img src={logo} className="App-logo" alt="logo" />
+
+        <h2>Create a New Game</h2>
         <div id="blockbutton">
         </div>
-        <div>Enter a name and click on the "Continue" button</div>
+        <div>Click on the button and share the gamecode with your players</div>
         
       <CreateGameComp />
       

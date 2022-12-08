@@ -1,5 +1,4 @@
 import React from 'react';
-import 'antd/dist/antd.css';
 import JoinGameComp from "../../components/JoinGameComp/JoinGameComp";
 import './JoinGame.css';
 

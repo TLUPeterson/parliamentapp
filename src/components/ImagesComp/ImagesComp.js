@@ -45,17 +45,16 @@ function ImagesComp(){
             </div>
             <div id="nameArea">
                 <h1>
-                    <i>{imageElement.name} </i>
+                    <h2>{imageElement.name} </h2>
                 </h1>
             </div>
             <div id="textArea">
-                <p style={{fontSize: "large"}}>
+                <p style={{fontSize: "small"}}>
                     {imageElement.text}
                 </p>
             </div>
             
             <div className="buttonsClass">
-                <Button type="primary" onClick={Teams}>Back to Teams view</Button>
                 <Button type="primary" onClick={Voting}>To Voting</Button>
             </div>
         </div>

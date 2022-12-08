@@ -1,4 +1,27 @@
 p {
     font-weight: bold;
-    color: white;
+    color: #ffd617;
+    font-size:4vh!important;
+    text-align: center!important;
+}
+.homeButton {
+    background-color: #004494!important;
+    border-radius: 8px!important;;
+    border-color: #264D7A!important;
+    width: 100% !important;
+    height: 100% !important;
+    color: #ffd617 !important;
+    font-size:3.8vh!important
+}
+
+
+@media (max-width: 600px) {
+    .header {
+    flex-direction: column;
+    }
+    .homeButton{
+      max-width: 100%!important;
+      /* Choose a responsive size for the button */
+      
+    }
 }

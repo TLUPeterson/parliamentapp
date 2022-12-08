@@ -67,9 +67,9 @@ function CreateGameComp(){
   return (
     <div>
     <form id="creategame" onSubmit={createGame}>
-      <Input value={player} onChange={(e) => setPlayer(e.target.value)} placeholder="Player name"/>
+      {/* <Input value={player} onChange={(e) => setPlayer(e.target.value)} placeholder="Player name"/> */}
 
-      <Button type="primary" form="creategame" onClick={createGame}>Continue</Button>
+      <Button type="primary" className="createButton" form="creategame" onClick={createGame}>Create</Button>
     </form> 
 
     

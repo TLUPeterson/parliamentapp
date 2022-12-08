@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import 'antd/dist/antd.css';
 import {  Statistic } from 'antd';
 import './Stage_Introduction.css';
 
@@ -26,7 +25,7 @@ function StageIntorduction(){
         <header className="App-header" style={{alignItems: 'center', justifyContent: 'center'}}>
 
           <div id="Countdown">
-            <Countdown title="Countdown:" value={deadlines} onFinish={onFinish} />
+            <Countdown className="countdown" title="Countdown:" value={deadlines} onFinish={onFinish} />
           </div>
           <img src="https://2019.cybersecforum.eu/media/PRELEGENCI_ansip2.png" className="App-logo" id='introPic' alt="ansip" />
           <div id='introText'>Dear Members of the European Parliament,</div>

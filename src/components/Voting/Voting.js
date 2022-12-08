@@ -38,7 +38,6 @@ function CreateGameComp(){
     console.log((posVote));
   };
   const nr1onChange = (e) => { 
-    console.log('changed', e);
     gamesRef.child(gamecode).child('votes').child('vote1').child(team).set(e);
 
     gamesRef.child(gamecode).child('votes').child('vote1').on('value', (snapshot) => {
@@ -71,7 +70,7 @@ function CreateGameComp(){
       />
       <div>Avg budget is: {test}</div>
     </Space>
-    <div>{posVote}</div>
+    {/* <div>{posVote}</div> */}
     </div>
 
     <div id='progressArea'>

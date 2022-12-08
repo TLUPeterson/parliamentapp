@@ -10,6 +10,7 @@ import { Provider } from "react-redux";
 import App from './App'
 import playerreducer from './store/allreducers'
 import './index.css';
+import 'antd/dist/antd.min.css';
 
 const store = configureStore({ reducer: playerreducer })
 store.subscribe(() => console.log(store.getState()))

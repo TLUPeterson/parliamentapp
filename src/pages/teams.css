@@ -13,10 +13,11 @@
   border-top: 1px solid;
   color: #fadb14;
   font-weight: bold;
+  border-width: 5%;
 }
 
 #gamecodeactual{
-  font-size: calc(20px + 2vmin);
+  font-size: calc(40px + 2vmin)!important;
   border-top: 1px solid;
   color: #fadb14;
   display: flex;
@@ -61,4 +62,23 @@ h2 {
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
+}
+
+.gameBtn {
+  background-color: #004494!important;
+  border-radius: 8px!important;;
+  border-color: #264D7A!important;
+  width: 100% !important;
+  height: 100% !important;
+  color: #ffd617 !important;
+  font-size:3.8vh!important
+}
+
+@media (max-width: 600px) {
+
+  .gameBtn{
+    max-width: 100%!important;
+    /* Choose a responsive size for the button */
+    
+  }
 }

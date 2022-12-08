@@ -101,7 +101,7 @@ if(!smallestTeam){
 
 }
   return (
-    <div>
+    <div className="joinContainter">
 
       <Form onFinish={joinGame}>
         <Form.Item  name="pname" rules={[{ required: true, message: 'Please input your name!' }]}>
@@ -109,7 +109,7 @@ if(!smallestTeam){
         </Form.Item>
 
         <Form.Item  name="game code" rules={[{ required: true, message: 'Please the gamecode!' }]}>
-          <Input placeholder="Game code" value={gameCode} onChange={(e) => setGameCode(e.target.value)}/>
+          <Input placeholder="Game code" value={gameCode} onChange={(e) => setGameCode(e.target.value)} />
         </Form.Item>
 
         <Form.Item wrapperCol={{ offset: 8, span: 16 }}>

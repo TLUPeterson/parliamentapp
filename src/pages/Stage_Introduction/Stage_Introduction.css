@@ -5,6 +5,8 @@
     font-weight: bold;
     font-size: xx-large;
     padding-bottom: 30px;
+    color: white
+
 }
 
 #InstructionsText {
@@ -25,4 +27,12 @@
 #introPic {
     width: 300px;
     height: 300px;
+}
+
+.ant-statistic-title{
+    color: white!important;
+}
+
+.ant-statistic-content-value{
+    color: white!important;
 }

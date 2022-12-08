@@ -1,6 +1,5 @@
 import { React, useState }  from 'react';
 import { Col, Row, Statistic, Button } from 'antd';
-import 'antd/dist/antd.css';
 import './teams.css';
 import TeamBar from '../components/Header/Header';
 import { gamesRef } from '../utils/fbConfig';
@@ -44,20 +43,24 @@ function Teams(){
       <div id='teamsDiv'>
         <div id='textAreaDiv'>
           <h2>Gamemaster View</h2>
-          <div id='gameBtn'>
-            <Button onClick={startGame} type="primary" size="large">Start game</Button>
-          </div>
+
           <div className="gamecode" id="gamecode">Enter the code to join:  </div>
           <p id="gamecodeactual" name="gamecode">{gamecode}</p>
+          <p>Start the game when all the players have joined</p>
+          <Button onClick={startGame} type="primary" size="large" className="gameBtn">Start game</Button>
         </div>
+
+            
+
       </div>
     );
   }else{
   return (
     <>
-    <TeamBar />
     <div className="App-teams">
-      
+        <br/>
+        <br/>
+        <br/>
         <div>You belong to </div><div style={{color: "#fa541c", fontWeight: "bold", fontSize: "xxx-large"}}>{team}.</div><br/><br/>
 
         <div className="Instructions">

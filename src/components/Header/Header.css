@@ -41,22 +41,13 @@ p {
     padding: 10px;
     white-space: pre-wrap;
 }
-
-.ant-btn{
-  color: red!;
-  max-width: 100%;
-  /* Choose a responsive size for the button */
-  margin-right: 5px;
-
-  
+.header-button{
+    color: #ffd617!important;
 }
-@media (max-width: 600px) {
-    .header {
-    flex-direction: column;
-    }
-    .ant-btn{
-      max-width: 30%;
-      /* Choose a responsive size for the button */
-      width: 25%;
-    }
+
+.headertext{
+    color: white!important;
+    font-size: 3vh!important;
+    font-weight: bold;
+    font-style: italic;
 }

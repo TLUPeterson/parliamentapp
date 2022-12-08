@@ -1,5 +1,4 @@
 import { React }  from 'react';
-import 'antd/dist/antd.css';
 import ProgressBar from '../../components/ProgressBar/ProgressBar';
 import Voting from '../../components/Voting/Voting';
 

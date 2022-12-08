@@ -9,30 +9,21 @@ const questionsSol = [
     ],
   },
   {
-    questionText: 'The Solidarity group fights for a fair society, where health, education and employment are guaranteed for all.',
+    questionText: 'What are the pillars of  your society?',
     answerOptions: [
-      { answerText: 'We fight for the poorest and for workers’ rights in cities and suburbs.', isCorrect: false },
-      { answerText: 'We believe that EU and member states have an important role in raising social welfare and promoting solidarity among people', isCorrect: true },
-      { answerText: 'We support the EU and member states as long as their use of authority is fair and does not threaten personal freedom too much.', isCorrect: false },
-      //{ answerText: '2tst4', isCorrect: false },
+      { answerText: 'Farmers and traditions', isCorrect: false },
+      { answerText: 'Individuals and businesses', isCorrect: false },
+      { answerText: 'The poor and workers', isCorrect: true },
+      { answerText: 'Environment and the peole', isCorrect: false },
     ],
   },
   {
-    questionText: 'Team solidarity question 3',
+    questionText: 'What should the public spending be like',
     answerOptions: [
-      { answerText: '3tst1', isCorrect: false },
-      { answerText: '3tst2', isCorrect: true },
-      { answerText: '3tst3', isCorrect: false },
-      { answerText: '3tst4', isCorrect: false },
-    ],
-  },
-  {
-    questionText: 'Team solidarity question 4',
-    answerOptions: [
-      { answerText: '4tst1', isCorrect: false },
-      { answerText: '4tst2', isCorrect: false },
-      { answerText: '4tst3', isCorrect: false },
-      { answerText: '4tst4', isCorrect: true },
+      { answerText: 'Remain reasonable', isCorrect: false },
+      { answerText: 'Increase spending when neccessary', isCorrect: true },
+      { answerText: 'No limit when protecting the environment', isCorrect: false },
+      { answerText: 'Remain as low as possible', isCorrect: false },
     ],
   },
 ]

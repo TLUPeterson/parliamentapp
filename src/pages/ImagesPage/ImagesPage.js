@@ -1,5 +1,4 @@
 import React from 'react';
-import 'antd/dist/antd.css';
 import ImagesComp from '../../components/ImagesComp/ImagesComp';
 
 function ImagesPage(){     

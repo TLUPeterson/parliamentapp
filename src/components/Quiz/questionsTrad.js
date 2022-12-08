@@ -2,37 +2,28 @@ const questions = [
   {
     questionText: 'What is the most important item in our party manifesto?',
     answerOptions: [
-      { answerText: 'keeping social and economic stability', isCorrect: false },
+      { answerText: 'keeping social and economic stability', isCorrect: true },
       { answerText: 'protecting health and the environment', isCorrect: false },
-      { answerText: 'guaranteeing social welfare and justice', isCorrect: true },
+      { answerText: 'guaranteeing social welfare and justice', isCorrect: false },
       { answerText: 'increasing individual and business freedom', isCorrect: false },
     ],
   },
   {
-    questionText: 'The Tradition group fights for preserving stability in society, whose foundations should rely on traditional values and the respect for authority.',
+    questionText: 'What are the pillars of  your society?',
     answerOptions: [
-      { answerText: 'We think farmers and traditions are the pillars of stability', isCorrect: false },
-      { answerText: 'We believe that modern society threatens farmers and traditional ways of life. That is why it is important we protect them.', isCorrect: true },
-      { answerText: 'We support the EU and member states when guaranteeing social and economic stability.', isCorrect: false },
-      { answerText: 'We want public spending to remain reasonable.', isCorrect: false },
+      { answerText: 'Farmers and traditions', isCorrect: true },
+      { answerText: 'Individuals and businesses', isCorrect: false },
+      { answerText: 'The poor and workers', isCorrect: false },
+      { answerText: 'Environment and the peole', isCorrect: false },
     ],
   },
   {
-    questionText: 'Team traditional question 3',
+    questionText: 'What should the public spending be like',
     answerOptions: [
-      { answerText: '3tst1', isCorrect: false },
-      { answerText: '3tst2', isCorrect: true },
-      { answerText: '3tst3', isCorrect: false },
-      { answerText: '3tst4', isCorrect: false },
-    ],
-  },
-  {
-    questionText: 'Team traditional question 4',
-    answerOptions: [
-      { answerText: '4tst1', isCorrect: false },
-      { answerText: '4tst2', isCorrect: false },
-      { answerText: '4tst3', isCorrect: false },
-      { answerText: '4tst4', isCorrect: true },
+      { answerText: 'Remain reasonable', isCorrect: true },
+      { answerText: 'Increase spending when neccessary', isCorrect: false },
+      { answerText: 'No limit when protecting the environment', isCorrect: false },
+      { answerText: 'Remain as low as possible', isCorrect: false },
     ],
   },
 ]
