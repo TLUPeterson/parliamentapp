@@ -1,4 +1,4 @@
-import { Checkbox, InputNumber, Space, Progress, Radio } from 'antd';
+import { Checkbox, InputNumber, Space, Progress, Radio, Button } from 'antd';
 import React, { useEffect, useState } from 'react';
 import './Voting.css'
 import { gamesRef } from "../../utils/fbConfig";
