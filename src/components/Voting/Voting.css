@@ -19,3 +19,11 @@
 .ant-progress-text {
     color: white !important;
 }
+
+.ant-checkbox {
+    background-color: #282C34;
+}
+
+body {
+    background-color: #282C34 ;
+}

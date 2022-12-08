@@ -39,7 +39,7 @@ p {
     text-align: center;
     background-color: #282C34;
     padding: 10px;
-
+    white-space: pre-wrap;
 }
 
 .ant-btn{

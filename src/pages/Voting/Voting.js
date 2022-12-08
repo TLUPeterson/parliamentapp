@@ -7,9 +7,8 @@ function Teams(){
 
   console.log()
   return (
-
-    <div id="votingbody" className='votingbody' style={{backgroundColor: '#f0f0f0'}}>
-      <ProgressBar />
+    <div id="votingbody" className='votingbody' style={{backgroundColor: '#282C34'}}>
+      {/* <ProgressBar /> */}
       <br/>
       <Voting/>
     </div>
