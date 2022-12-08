@@ -1,13 +1,30 @@
 export const images = [{
     name: 'Johan Swanson',
     pic: 'https://imgur.com/auU4BUo.png',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl metus, rhoncus a iaculis at, dapibus non eros. Duis convallis tristique ante, vel iaculis mi. Suspendisse potenti. Integer vehicula cursus tortor, vel ultricies augue rhoncus et. Vivamus nibh dui, pharetra quis aliquet nec, porttitor eu sem. Nunc mollis ante sed tortor semper mattis. Sed dapibus, ligula ut finibus mollis, odio turpis tempus velit, et finibus mi dolor vitae libero. Curabitur iaculis nisi tellus, ac fermentum augue blandit vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus maximus ornare hendrerit. Etiam et metus id est rhoncus congue. Ut eu magna ut leo dignissim pretium. Vestibulum accumsan odio ligula, at pretium tortor pretium in. Vivamus accumsan consequat purus ut ornare. Nullam fringilla, est eu tempor porttitor, orci justo condimentum dui, a laoreet enim nisl vitae ante. Ut id tortor interdum mauris tristique suscipit.'
+    text: `We have waited for this European Action Plan for a long time. Indeed, this is not only a
+    question of geographical solidarity, but also of intergeneration solidarity. By investing
+    massively in water pipes and distribution systems, as well as in scientific research, you
+    will increase access to fresh water across Europe. In addition, you will also save water
+    in the long run, by finding other ways to get fresh water for future generations.
+    Progress made in desalination is a good example. It will become easier in the future to
+    remove the salt out of seawater, to use it for our environment and as drinking water.`
 }, {
     name: 'Madeleine Franklin',
     pic: 'https://imgur.com/fsWynFx.png',
-    text: 'Nulla facilisi. Proin gravida lobortis erat vel pretium. Suspendisse in velit et neque condimentum tempor at quis orci. Phasellus mollis quis eros ac consequat. Maecenas id tortor et erat vulputate pulvinar. Fusce nec nisi mattis lectus vehicula tempus in eget eros. In sit amet rhoncus massa, eget vulputate orci. Vestibulum viverra pellentesque tellus ut lobortis. Quisque varius enim lorem, in elementum est pellentesque a. Duis ligula sapien, finibus id condimentum blandit, vestibulum eget ipsum.'
+    text: `I have been unemployed for two years now. I used to work in a bottle factory but it was
+    shut down and moved outside Europe. They said that the price of tap water was so
+    low that bottled water could not compete – because of the price of the plastic bottles,
+    you see.
+    I don’t know if this is true, but what I know is that I have been looking for a job since
+    then... without success.`
 }, {
     name: 'Carson Caldwell',
     pic: 'https://imgur.com/8kgWjIq.png',
-    text: 'Etiam lobortis velit a ante fringilla, vitae malesuada lectus vehicula. In non libero dolor. Curabitur est lectus, posuere consectetur dignissim non, placerat sit amet lectus. Fusce vitae bibendum justo. Cras ac lectus nibh. Duis dictum sodales sollicitudin. Sed elementum enim et sapien aliquet, vel consequat arcu euismod. Suspendisse luctus ipsum nec nunc pulvinar tincidunt. Mauris commodo magna sed enim imperdiet varius. Pellentesque condimentum sodales lacus, a venenatis mi maximus id. Duis convallis nibh vel justo malesuada vehicula. Proin ac risus eu urna congue interdum. Nulla facilisi.'
+    text: `Dear Membre of the Euorpean Parliament, I write you because I have heard that a
+    massive action plan “to save water” is undre preparation at the Euorpean level. Please
+    let me tell you that I have seen a lot of ambitious plans in my life and they have all
+    falied but one: the Marshall plan after the War.
+    Sp I beg you to remain reasonnabme, not to spend too much money on this, and to
+    focus on keeping stabliity in our society.
+    I hope you will read this letter to the end and follow the advice of an old man.`
 }];

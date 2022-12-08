@@ -10,6 +10,7 @@ import Voting from './pages/Voting/Voting';
 import Quiz from './pages/Quiz/Quiz';
 import ImagesPage from './pages/ImagesPage/ImagesPage';
 import StageIntroduction from './pages/Stage_Introduction/Stage_Introduction';
+import StageEnd from './pages/Stage_End/Stage_End';
 function App() {
 
   //const [user, setUser] = useState();
@@ -32,6 +33,8 @@ function App() {
       <Route path="/join" element={<JoinGame /*setUser = {setUser} user={user}*//>} />
       <Route path="/images" element={<ImagesPage />} />
       <Route path="/introduction" element={<StageIntroduction />} />
+      <Route path="/end" element={<StageEnd />} />
+
   </Routes>
   </>
   );
